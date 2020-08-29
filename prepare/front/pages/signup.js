@@ -1,9 +1,9 @@
 import React, { useCallback, useState } from 'react';
-import AppLayout from './components/AppLayout';
+import AppLayout from '../components/AppLayout';
 import Head from 'next/head';
 import { Form, Input, Checkbox, Button } from 'antd';
 import styled from 'styled-components';
-import useInput from './hooks/useInput';
+import useInput from '../hooks/useInput';
 
 const ErrorMessage = styled.div`
   color: red;
