@@ -26,7 +26,7 @@ export const initialState = {
       ],
     },
   ],
-  imagePath: [],
+  imagePaths: [],
   postAdded: false,
 };
 
