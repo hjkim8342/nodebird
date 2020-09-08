@@ -35,18 +35,16 @@ export const addPost = {
   type: ADD_POST,
 };
 
-const dummyPost = [
-  {
+const dummyPost = {
+  id: 2,
+  User: {
     id: 2,
-    User: {
-      id: 2,
-      nickname: 'KiRil',
-    },
-    content: '두번째 게시글',
-    Images: [],
-    Comments: [],
+    nickname: 'KiRil',
   },
-];
+  content: '두번째 게시글',
+  Images: [],
+  Comments: [],
+};
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
