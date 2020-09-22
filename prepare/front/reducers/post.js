@@ -13,7 +13,7 @@ export const initialState = {
         },
         {
           src:
-            'https://lh3.googleusercontent.com/proxy/pFNuiLjgrcJilJMBaMZhKHRMJs2kD3XlSDksl6WevHddJwpzYpxavrLG5gldv3dKZHd7gVwZTysHXiMbogIOMFkvnfWV3ceLAt8sJoJu6cfPQ5AqmVr-sTtL',
+            'https://upload.wikimedia.org/wikipedia/commons/a/a4/170414_%EB%AE%A4%EC%A7%81%EB%B1%85%ED%81%AC_%EC%B6%9C%EA%B7%BC%EA%B8%B8_%EC%9C%A0%EC%95%84_%281%29.jpg',
         },
         {
           src:
