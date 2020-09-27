@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build"
   },
-  "author": "KiRil",
+  "author": "pju",
   "license": "ISC",
   "dependencies": {
     "@ant-design/icons": "^4.2.1",
