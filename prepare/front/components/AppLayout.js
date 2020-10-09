@@ -14,6 +14,8 @@ const SearchInput = styled(Input.Search)`
 `;
 
 const AppLayout = ({ children }) => {
+  // useSelector는 react-redux통해 사용 (react-redux는 react와 redux를 연결해준다.)
+  // isLoggedIn 변경시 알아서 rerendering된다.
   const isLoggedIn = useSelector((state) => state.user.isLoggedIn);
 
   return (
@@ -30,7 +32,7 @@ const AppLayout = ({ children }) => {
           </Link>
         </MenuItem>
         <MenuItem>
-          <SearchInput enterButton />
+          <SearchInput />
         </MenuItem>
         <MenuItem>
           <Link href="/signup">
@@ -54,13 +56,20 @@ const AppLayout = ({ children }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Made By KiRil
+            Made By ZeroCho
           </a>
         </Col>
       </Row>
     </div>
   );
 };
+
+// antd의 Row와 Col을 import해 반응형그리드를 그릴 수 있다.
+// 그리드 사용시 가로먼저 나누고 세로를 나눈다.
+// xs:모바일, sm:태블릿, md:작은 데스크탑
+// gutter란? Row에서 해당 속성 사용시 여백을 주는것 (컬럼끼리 딱 붙는 것을 방지한다.)
+
+// 리액트에서 배열로 JSX사용시는 내부에 반드시 key속성이 필요하다.
 
 AppLayout.propTypes = {
   children: PropTypes.node.isRequired,
